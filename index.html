@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novix - Thiết Bị Điện Tử Chính Hãng</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <!-- Nơi JS sẽ render Header -->
+  <div id="app-header"></div>
+
+  <main class="home-container">
+    <!-- HERO BANNER SECTION -->
+    <section class="hero-section">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1 class="hero-title">CÔNG NGHỆ CHÍNH HÃNG<br>ƯU ĐÃI ĐẾN 40%</h1>
+          <p class="hero-subtitle">
+            Trải nghiệm âm thanh đỉnh cao, smartphone flagship & phụ kiện thông minh thế hệ mới nhất 2025. Miễn phí vận
+            chuyển 0đ toàn quốc cho mọi đơn hàng hôm nay.
+          </p>
+
+          <!-- Countdown Timer -->
+          <div class="countdown-wrapper">
+            <span class="countdown-label">⏱ KẾT THÚC SAU:</span>
+            <div class="timer-boxes">
+              <div class="timer-box"><strong>02</strong><span>NGÀY</span></div> <span class="colon">:</span>
+              <div class="timer-box"><strong>14</strong><span>GIỜ</span></div> <span class="colon">:</span>
+              <div class="timer-box"><strong>35</strong><span>PHÚT</span></div> <span class="colon">:</span>
+              <div class="timer-box"><strong>45</strong><span>GIÂY</span></div>
+            </div>
+          </div>
+
+          <a href="products.html" class="btn-hero">Xem toàn bộ Danh mục ⊞</a>
+        </div>
+
+        <!-- Feature Badges -->
+        <div class="hero-features">
+          <div class="feature-card">
+            <span class="feature-icon">⚡</span>
+            <div>
+              <strong>Giao siêu tốc 2 giờ</strong>
+              <p>Nội thành HN & TP. Hồ Chí Minh</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">🛡</span>
+            <div>
+              <strong>Bảo hành 1 đổi 1</strong>
+              <p>Cam kết 30 ngày an tâm tuyệt đối</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">💳</span>
+            <div>
+              <strong>Trả góp 0% Lãi suất</strong>
+              <p>Thủ tục duyệt online trong 5 phút</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: SẢN PHẨM BÁN CHẠY -->
+    <section class="products-section container">
+      <div class="section-header">
+        <div>
+          <span class="sub-badge orange">🔥 BÁN CHẠY NHẤT TUẦN QUA</span>
+          <h2 class="section-title">Sản phẩm Bán chạy</h2>
+          <p class="section-desc">Top thiết bị công nghệ được hàng nghìn khách hàng tin dùng nhất tháng này</p>
+        </div>
+        <a href="products.html" class="view-all-link">Xem tất cả (124+ sản phẩm) →</a>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="tab-btn active">Tất cả</button>
+        <button class="tab-btn">Tai nghe chống ồn</button>
+        <button class="tab-btn">Đồng hồ thông minh</button>
+        <button class="tab-btn">Điện thoại Flagship</button>
+        <button class="tab-btn">Phụ kiện Gaming</button>
+      </div>
+
+      <!-- Grid Sản Phẩm Bán Chạy -->
+      <div id="bestseller-products" class="product-grid">
+        <!-- Đổ Component ProductCard vào đây bằng JS -->
+      </div>
+    </section>
+
+    <!-- SECTION 2: SẢN PHẨM MỚI NHẤT 2026 -->
+    <section class="products-section container">
+      <div class="section-header">
+        <div>
+          <span class="sub-badge green">🛡 HÀNG CHÍNH HÃNG MỚI 100% NGUYÊN SEAL</span>
+          <h2 class="section-title">✨ Sản phẩm Mới nhất 2026</h2>
+          <p class="section-desc">Cập nhật công nghệ tiên phong vừa cập bến ElectroStore trong tuần này</p>
+        </div>
+        <a href="products.html" class="view-all-link">Khám phá bộ sưu tập mới →</a>
+      </div>
+
+      <!-- Grid Sản Phẩm Mới -->
+      <div id="newest-products" class="product-grid">
+        <!-- Đổ Component ProductCard vào đây bằng JS -->
+      </div>
+    </section>
+
+    <!-- TRUST FEATURES FOOTER SECTION -->
+    <section class="trust-features-section">
+      <div class="container trust-grid">
+        <div class="trust-item">
+          <div class="trust-icon">🛡</div>
+          <h3>100% Chính Hãng</h3>
+          <p>Cam kết hoàn tiền gấp đôi nếu phát hiện hàng giả</p>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">🚚</div>
+          <h3>Giao Hàng Siêu Tốc</h3>
+          <p>Đóng gói chuẩn và giao tận tay an toàn</p>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">🔄</div>
+          <h3>Đổi Trả Dễ Dàng</h3>
+          <p>30 ngày đổi mới nếu có lỗi kỹ thuật</p>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">🎧</div>
+          <h3>Hỗ Trợ 24/7</h3>
+          <p>Chuyên viên kỹ thuật trực tiếp giải đáp</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Nơi JS sẽ render Footer -->
+  <div id="app-footer"></div>
+
+  <!-- Import file JS chính -->
+  <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

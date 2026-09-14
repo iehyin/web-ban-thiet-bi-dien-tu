@@ -1,0 +1,292 @@
+{
+    "products": [
+        {
+            "id": "1",
+            "name": "Tai nghe Bluetooth Wireless",
+            "price": 850000,
+            "category": "Audio",
+            "image": "https://picsum.photos/300/200?random=1",
+            "rating": 4.5
+        },
+        {
+            "id": "2",
+            "name": "Bàn phím Cơ RGB Wireless",
+            "price": 1450000,
+            "category": "Accessories",
+            "image": "https://picsum.photos/300/200?random=2",
+            "rating": 4.8
+        },
+        {
+            "id": "3",
+            "name": "Chuột Không Dây Ergonomic",
+            "price": 620000,
+            "category": "Accessories",
+            "image": "https://picsum.photos/300/200?random=3",
+            "rating": 4.2
+        },
+        {
+            "id": "4",
+            "name": "Màn hình 27 inch 144Hz IPS",
+            "price": 4800000,
+            "category": "Monitor",
+            "image": "https://picsum.photos/300/200?random=4",
+            "rating": 4.9
+        },
+        {
+            "id": "5",
+            "name": "Loa Bluetooth Mini",
+            "price": 950000,
+            "category": "Audio",
+            "image": "https://picsum.photos/300/200?random=5",
+            "rating": 4.4
+        },
+        {
+            "id": "6",
+            "name": "Webcam Full HD 1080P",
+            "price": 790000,
+            "category": "Accessories",
+            "image": "https://picsum.photos/300/200?random=6",
+            "rating": 4.3
+        },
+        {
+            "id": "7",
+            "name": "SSD NVMe 1TB",
+            "price": 1890000,
+            "category": "Storage",
+            "image": "https://picsum.photos/300/200?random=7",
+            "rating": 4.9
+        },
+        {
+            "id": "8",
+            "name": "Ổ cứng HDD 2TB",
+            "price": 1450000,
+            "category": "Storage",
+            "image": "https://picsum.photos/300/200?random=8",
+            "rating": 4.5
+        },
+        {
+            "id": "9",
+            "name": "USB 128GB 3.2",
+            "price": 390000,
+            "category": "Storage",
+            "image": "https://picsum.photos/300/200?random=9",
+            "rating": 4.4
+        },
+        {
+            "id": "10",
+            "name": "Laptop Stand Nhôm",
+            "price": 450000,
+            "category": "Accessories",
+            "image": "https://picsum.photos/300/200?random=10",
+            "rating": 4.6
+        },
+        {
+            "id": "11",
+            "name": "Đế Tản Nhiệt Laptop",
+            "price": 680000,
+            "category": "Accessories",
+            "image": "https://picsum.photos/300/200?random=11",
+            "rating": 4.2
+        },
+        {
+            "id": "12",
+            "name": "Tai nghe Gaming 7.1",
+            "price": 1250000,
+            "category": "Audio",
+            "image": "https://picsum.photos/300/200?random=12",
+            "rating": 4.8
+        },
+        {
+            "id": "13",
+            "name": "Micro USB RGB",
+            "price": 1150000,
+            "category": "Audio",
+            "image": "https://picsum.photos/300/200?random=13",
+            "rating": 4.7
+        },
+        {
+            "id": "14",
+            "name": "Camera An Ninh WiFi",
+            "price": 1590000,
+            "category": "Smart Home",
+            "image": "https://picsum.photos/300/200?random=14",
+            "rating": 4.6
+        },
+        {
+            "id": "15",
+            "name": "Bóng Đèn Thông Minh",
+            "price": 320000,
+            "category": "Smart Home",
+            "image": "https://picsum.photos/300/200?random=15",
+            "rating": 4.3
+        },
+        {
+            "id": "16",
+            "name": "Ổ Cắm Thông Minh",
+            "price": 410000,
+            "category": "Smart Home",
+            "image": "https://picsum.photos/300/200?random=16",
+            "rating": 4.5
+        },
+        {
+            "id": "17",
+            "name": "Đồng Hồ Thông Minh",
+            "price": 2990000,
+            "category": "Wearables",
+            "image": "https://picsum.photos/300/200?random=17",
+            "rating": 4.7
+        },
+        {
+            "id": "18",
+            "name": "Vòng Đeo Tay Thể Thao",
+            "price": 890000,
+            "category": "Wearables",
+            "image": "https://picsum.photos/300/200?random=18",
+            "rating": 4.4
+        },
+        {
+            "id": "19",
+            "name": "Sạc Dự Phòng 20000mAh",
+            "price": 750000,
+            "category": "Accessories",
+            "image": "https://picsum.photos/300/200?random=19",
+            "rating": 4.8
+        },
+        {
+            "id": "20",
+            "name": "Cáp Sạc USB-C 100W",
+            "price": 180000,
+            "category": "Accessories",
+            "image": "https://picsum.photos/300/200?random=20",
+            "rating": 4.6
+        },
+        {
+            "id": "21",
+            "name": "Bộ Sạc Nhanh GaN 65W",
+            "price": 690000,
+            "category": "Accessories",
+            "image": "https://picsum.photos/300/200?random=21",
+            "rating": 4.9
+        },
+        {
+            "id": "22",
+            "name": "Router WiFi 6",
+            "price": 2290000,
+            "category": "Networking",
+            "image": "https://picsum.photos/300/200?random=22",
+            "rating": 4.7
+        },
+        {
+            "id": "23",
+            "name": "Switch 8 Cổng Gigabit",
+            "price": 850000,
+            "category": "Networking",
+            "image": "https://picsum.photos/300/200?random=23",
+            "rating": 4.5
+        },
+        {
+            "id": "24",
+            "name": "Bàn Di Chuột XXL",
+            "price": 250000,
+            "category": "Accessories",
+            "image": "https://picsum.photos/300/200?random=24",
+            "rating": 4.4
+        },
+        {
+            "id": "25",
+            "name": "Ghế Gaming Công Thái Học",
+            "price": 3990000,
+            "category": "Furniture",
+            "image": "https://picsum.photos/300/200?random=25",
+            "rating": 4.8
+        },
+        {
+            "id": "26",
+            "name": "Bàn Gaming 120cm",
+            "price": 2890000,
+            "category": "Furniture",
+            "image": "https://picsum.photos/300/200?random=26",
+            "rating": 4.6
+        },
+        {
+            "id": "27",
+            "name": "Đèn LED Màn Hình",
+            "price": 520000,
+            "category": "Accessories",
+            "image": "https://picsum.photos/300/200?random=27",
+            "rating": 4.5
+        },
+        {
+            "id": "28",
+            "name": "Tablet Android 10 inch",
+            "price": 5490000,
+            "category": "Tablet",
+            "image": "https://picsum.photos/300/200?random=28",
+            "rating": 4.6
+        },
+        {
+            "id": "29",
+            "name": "Điện thoại 5G 256GB",
+            "price": 9990000,
+            "category": "Phone",
+            "image": "https://picsum.photos/300/200?random=29",
+            "rating": 4.9
+        },
+        {
+            "id": "30",
+            "name": "Máy Chiếu Mini",
+            "price": 3690000,
+            "category": "Projector",
+            "image": "https://picsum.photos/300/200?random=30",
+            "rating": 4.4
+        },
+        {
+            "id": "31",
+            "name": "Bộ Điều Khiển Game Bluetooth",
+            "price": 890000,
+            "category": "Gaming",
+            "image": "https://picsum.photos/300/200?random=31",
+            "rating": 4.7
+        },
+        {
+            "id": "32",
+            "name": "Máy In Laser Đen Trắng",
+            "price": 3290000,
+            "category": "Office",
+            "image": "https://picsum.photos/300/200?random=32",
+            "rating": 4.5
+        },
+        {
+            "id": "33",
+            "name": "Máy Quét Tài Liệu",
+            "price": 2590000,
+            "category": "Office",
+            "image": "https://picsum.photos/300/200?random=33",
+            "rating": 4.3
+        },
+        {
+            "id": "34",
+            "name": "Máy Đọc Sách E-Ink",
+            "price": 4190000,
+            "category": "Tablet",
+            "image": "https://picsum.photos/300/200?random=34",
+            "rating": 4.8
+        },
+        {
+            "id": "35",
+            "name": "Loa Soundbar Bluetooth",
+            "price": 2890000,
+            "category": "Audio",
+            "image": "https://picsum.photos/300/200?random=35",
+            "rating": 4.7
+        },
+        {
+            "id": "36",
+            "name": "Camera Hành Trình 4K",
+            "price": 3790000,
+            "category": "Camera",
+            "image": "https://picsum.photos/300/200?random=36",
+            "rating": 4.6
+        }
+    ]
+}
