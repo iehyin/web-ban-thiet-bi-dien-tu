@@ -5,7 +5,7 @@ async function loadHomeProducts() {
   const newestContainer = document.getElementById('newest-products');
 
   try {
-    const response = await fetch('../db.json');
+    const response = await fetch('http://localhost:3000/products');
     
     if (!response.ok) {
       throw new Error('Lỗi fetch API');
@@ -17,6 +17,7 @@ async function loadHomeProducts() {
     const renderList = (container) => {
       if (container) {
         container.innerHTML = products
+          .slice(0, 8)
           .map(item => ProductCard(item, wishlist.includes(item.id)))
           .join('');
       }

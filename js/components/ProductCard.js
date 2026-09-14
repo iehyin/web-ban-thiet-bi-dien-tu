@@ -30,7 +30,7 @@ export function ProductCard(product, isWishlisted = false) {
       <div class="card-body">
         <span class="product-category">${category || 'THIẾT BỊ ĐEO'}</span>
         <h3 class="product-name">
-          <a href="detail.html?id=${id}">${name}</a>[cite: 1]
+          <a href="detail.html?id=${id}">${name}</a>
         </h3>
         
         <div class="product-rating">
