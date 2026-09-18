@@ -1,24 +1,162 @@
-/* Tablet & Màn hình vừa */
+/* ==========================================================================
+   ROBUST RESPONSIVE DESIGN - NOVIX E-COMMERCE
+   ========================================================================== */
+
+/* ==========================================================================
+   1. TABLET & LAPTOP NHỎ (Max-width: 1024px)
+   ========================================================================== */
 @media (max-width: 1024px) {
+  /* Layout chung & Grids */
   .product-grid, 
   .trust-grid, 
-  .hero-features {
-    grid-template-columns: repeat(2, 1fr);
+  .hero-features,
+  .store-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px;
   }
 
+  /* Hero Banner */
   .hero-title {
     font-size: 32px;
   }
-}
 
-/* Mobile */
-@media (max-width: 640px) {
-  .product-grid, 
-  .trust-grid, 
-  .hero-features {
-    grid-template-columns: 1fr;
+  /* Product Card */
+  .product-card {
+    max-width: 100% !important; /* Gỡ giới hạn width để tự lấp đầy cột */
   }
 
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 32px;
+  }
+
+  /* Trang Store (products.html) */
+  .store-layout {
+    flex-direction: column;
+  }
+  .store-sidebar {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  /* Trang Cart (cart.html) */
+  .cart-layout {
+    grid-template-columns: 1fr;
+  }
+  .cart-header, .cart-item {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+  .col-price {
+    display: none; /* Ẩn cột đơn giá trên màn hình nhỏ */
+  }
+
+  /* Trang Detail (detail.html) */
+  .detail-top {
+    grid-template-columns: 1fr;
+  }
+  .btn-group {
+    flex-direction: column;
+  }
+
+  /* Trang Wishlist (wishlist.html) */
+  .wishlist-features {
+    grid-template-columns: 1fr;
+  }
+  .breadcrumb-toolbar {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+}
+
+/* ==========================================================================
+   2. MOBILE & SMARTPHONE (Max-width: 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* --- HEADER TỐI ƯU GỌN GÀNG --- */
+  /* Ẩn hoàn toàn thanh Top Bar xanh trên cùng */
+  .top-bar {
+    display: none !important;
+  }
+
+  .main-header {
+    padding: 10px 0;
+  }
+
+  .main-header-inner {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  /* Rút gọn Logo */
+  .logo-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+  .logo-title {
+    font-size: 20px;
+  }
+  .logo-subtitle {
+    display: none !important; /* Ẩn slogan */
+  }
+
+  /* Ô Tìm kiếm nằm gọn 1 dòng bên dưới */
+  .search-wrapper {
+    order: 3;
+    width: 100%;
+    margin-top: 4px;
+    background: #f1f5f9;
+  }
+  .search-category {
+    display: none !important; /* Ẩn bộ lọc "Tất cả danh mục" */
+  }
+  .search-input {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+  .btn-search {
+    padding: 8px 12px;
+    font-size: 0; /* Ẩn chữ "Tìm kiếm" */
+  }
+  .btn-search i {
+    font-size: 14px; /* Chỉ hiển thị Icon kính lúp */
+  }
+
+  /* Cụm Nút Hành Động & User */
+  .header-actions {
+    gap: 6px;
+  }
+  .action-btn {
+    width: 36px;
+    height: 36px;
+  }
+  .user-action {
+    padding-left: 6px;
+    margin-left: 0;
+    border-left: none;
+  }
+  .user-info {
+    display: none !important; /* Ẩn Text Tên & Vai trò User */
+  }
+  .logout-link {
+    font-size: 0;
+    margin-left: 4px;
+  }
+  .logout-link i {
+    font-size: 16px;
+    color: #ef4444;
+  }
+
+  /* Ẩn thanh Navigation cồng kềnh */
+  .main-nav {
+    display: none !important;
+  }
+
+  /* --- CÁC NỘI DUNG KHÁC --- */
   .section-header {
     flex-direction: column;
     align-items: flex-start;
@@ -27,5 +165,95 @@
 
   .filter-tabs {
     flex-wrap: wrap;
+  }
+
+  .store-sidebar {
+    grid-template-columns: 1fr;
+  }
+
+  .store-toolbar {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .wishlist-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
+
+/* ==========================================================================
+   3. MOBILE NHỎ (Max-width: 480px)
+   ========================================================================== */
+@media (max-width: 480px) {
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  /* Đưa danh sách sản phẩm về 2 cột mỏng chuẩn App Shopee/Tiki */
+  .product-grid,
+  .store-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+  }
+
+  .trust-grid, 
+  .hero-features {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Product Card thu nhỏ padding & text */
+  .card-body {
+    padding: 10px;
+  }
+  .product-name {
+    font-size: 13px;
+  }
+  .product-price {
+    font-size: 16px;
+  }
+  .btn-add-cart {
+    font-size: 12px;
+    height: 36px;
+    padding: 0 6px;
+  }
+
+  /* Footer 1 cột */
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 28px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    background: transparent;
+    padding: 0;
+  }
+  .newsletter-form input {
+    background: #f3f4f6;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 8px;
+  }
+  .newsletter-form button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .footer-bottom-inner {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .specs-table tr {
+    display: flex;
+    flex-direction: column;
+  }
+  .specs-table tr td:first-child {
+    width: 100%;
+    padding-bottom: 4px;
   }
 }
