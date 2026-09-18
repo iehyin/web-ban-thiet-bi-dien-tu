@@ -1,0 +1,181 @@
+.cart-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  align-items: start;
+  margin-top: 24px;
+  margin-bottom: 60px;
+}
+
+.cart-count-badge {
+  background: #e2e8f0;
+  color: #1e293b;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 12px;
+  margin-left: 8px;
+}
+
+/* --- CỘT TRÁI --- */
+.freeship-bar-container {
+  background: #fff;
+  border: 1px solid #16a34a;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.fs-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 600;
+  color: #16a34a;
+  margin-bottom: 12px;
+}
+
+.fs-progress {
+  height: 6px;
+  background: #dcfce7;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.fs-progress-fill {
+  height: 100%;
+  background: #16a34a;
+  border-radius: 4px;
+}
+
+.cart-items-container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.02);
+  border: 1px solid #f1f5f9;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.cart-header {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+  padding: 16px 20px;
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #475569;
+  align-items: center;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+  padding: 20px;
+  border-bottom: 1px solid #f1f5f9;
+  align-items: center;
+}
+
+.col-checkbox { display: flex; align-items: center; gap: 12px; }
+.col-price { text-align: right; }
+.col-qty { display: flex; justify-content: center; }
+.col-total { text-align: right; position: relative; }
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #1e3a8a;
+  cursor: pointer;
+}
+
+.item-info { display: flex; gap: 16px; align-items: center; }
+.item-img {
+  width: 80px; height: 80px; background: #f8fafc;
+  border-radius: 8px; position: relative; display: flex; align-items: center; justify-content: center;
+}
+.item-img img { width: 90%; height: 90%; object-fit: contain; }
+.item-badge {
+  position: absolute; top: 4px; left: -4px; background: #ea580c; color: #fff;
+  font-size: 10px; font-weight: bold; padding: 2px 6px; border-radius: 4px;
+}
+
+.item-details h4 { font-size: 14px; color: #0f172a; margin: 0 0 4px 0; line-height: 1.4; }
+.item-category { font-size: 11px; font-weight: 700; color: #64748b; text-transform: uppercase; margin-bottom: 4px; display: block;}
+.item-variant { font-size: 12px; color: #475569; background: #f1f5f9; padding: 2px 8px; border-radius: 12px; display: inline-block; margin-bottom: 4px; }
+.item-warranty { font-size: 11px; color: #94a3b8; display: block; }
+
+.price-current { display: block; font-size: 15px; font-weight: 700; color: #0f172a; }
+.price-old { display: block; font-size: 12px; color: #94a3b8; text-decoration: line-through; }
+
+.qty-selector { display: flex; align-items: center; border: 1px solid #cbd5e1; border-radius: 6px; overflow: hidden; width: max-content;}
+.qty-btn { width: 28px; height: 28px; background: #f8fafc; border: none; cursor: pointer; color: #475569; }
+.qty-input { width: 36px; height: 28px; border: none; text-align: center; font-size: 13px; font-weight: 600; border-left: 1px solid #cbd5e1; border-right: 1px solid #cbd5e1; }
+
+.total-price { font-size: 16px; font-weight: 700; color: #ea580c; display: block; margin-bottom: 8px; }
+.btn-remove-item { color: #94a3b8; background: transparent; border: none; cursor: pointer; font-size: 16px; }
+.btn-remove-item:hover { color: #ef4444; }
+
+.cart-actions { display: flex; justify-content: space-between; padding: 16px 20px; background: #f8fafc; }
+.btn-continue-shopping { font-size: 14px; font-weight: 600; color: #1e3a8a; text-decoration: none; padding: 8px 16px; background: #eff6ff; border-radius: 20px; }
+.btn-delete-selected { font-size: 14px; color: #ef4444; background: transparent; border: none; cursor: pointer; font-weight: 600; }
+
+.trust-features { display: flex; gap: 16px; }
+.tf-item { flex: 1; display: flex; align-items: center; gap: 12px; background: #fff; padding: 16px; border-radius: 12px; border: 1px solid #f1f5f9; }
+.tf-icon { width: 40px; height: 40px; background: #eff6ff; color: #1e3a8a; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; }
+.tf-item strong { display: block; font-size: 14px; color: #0f172a; margin-bottom: 2px; }
+.tf-item p { font-size: 12px; color: #64748b; margin: 0; }
+
+/* --- CỘT PHẢI --- */
+.summary-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+  position: sticky;
+  top: 24px;
+}
+
+.summary-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #f1f5f9; padding-bottom: 16px; margin-bottom: 20px; }
+.summary-header h3 { font-size: 18px; font-weight: 700; margin: 0; }
+.badge-temp { background: #f1f5f9; color: #475569; font-size: 12px; padding: 4px 8px; border-radius: 12px; }
+
+.voucher-section label { display: block; font-size: 13px; font-weight: 600; color: #b45309; margin-bottom: 8px; }
+.voucher-input-group { display: flex; gap: 8px; margin-bottom: 12px; }
+.voucher-input-group input { flex: 1; border: 1px solid #cbd5e1; padding: 10px 12px; border-radius: 8px; font-size: 13px; outline: none; }
+.voucher-input-group button { background: #1e3a8a; color: white; border: none; padding: 0 16px; border-radius: 8px; font-weight: 600; cursor: pointer; }
+
+.applied-voucher { background: #eff6ff; border: 1px solid #bfdbfe; padding: 10px 12px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: #1e3a8a; font-weight: 600; margin-bottom: 16px; }
+.applied-voucher.hidden { display: none; }
+.remove-voucher { cursor: pointer; color: #94a3b8; }
+
+.summary-lines { border-top: 1px solid #f1f5f9; border-bottom: 1px solid #f1f5f9; padding: 16px 0; margin-bottom: 16px; display: flex; flex-direction: column; gap: 12px; }
+.line { display: flex; justify-content: space-between; font-size: 14px; color: #475569; align-items: center; }
+.line strong { color: #0f172a; font-size: 15px; }
+.discount-line.hidden { display: none; }
+.discount-line strong { color: #dc2626; }
+.tag { background: #fef2f2; color: #dc2626; font-size: 10px; padding: 2px 6px; border-radius: 4px; border: 1px solid #fca5a5; margin-left: 4px; }
+.text-green { color: #16a34a !important; }
+.text-blue { color: #2563eb !important; }
+
+.summary-total { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px; }
+.summary-total > span { font-size: 16px; font-weight: 700; color: #0f172a; margin-top: 4px; }
+.total-right { text-align: right; }
+.total-right strong { display: block; font-size: 26px; font-weight: 800; color: #ea580c; line-height: 1; margin-bottom: 4px; }
+.total-right small { font-size: 11px; color: #94a3b8; }
+
+.btn-checkout { width: 100%; padding: 14px; background: #ea580c; color: white; border: none; border-radius: 8px; font-size: 15px; font-weight: 700; cursor: pointer; display: flex; justify-content: center; align-items: center; gap: 8px; transition: 0.2s; margin-bottom: 16px; }
+.btn-checkout:hover { background: #c2410c; }
+.btn-checkout:disabled { background: #cbd5e1; cursor: not-allowed; }
+
+.checkout-secure { display: flex; justify-content: center; gap: 16px; font-size: 12px; color: #64748b; font-weight: 600; margin-bottom: 12px; }
+.checkout-secure i { color: #16a34a; }
+.terms-text { text-align: center; font-size: 11px; color: #94a3b8; margin: 0; }
+.terms-text a { color: #1e3a8a; }
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .cart-layout { grid-template-columns: 1fr; }
+  .cart-header, .cart-item { grid-template-columns: 2fr 1fr 1fr; }
+  .col-price { display: none; }
+}

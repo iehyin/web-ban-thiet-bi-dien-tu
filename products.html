@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cửa Hàng - Novix</title>
+  
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/ed7e0a5ab3.js" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/products.css">
+</head>
+<body class="bg-light">
+
+  <!-- Header -->
+  <div id="app-header"></div>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb-wrapper container">
+    <a href="index.html"><i class="fa-solid fa-house"></i> Trang chủ</a>
+    <i class="fa-solid fa-chevron-right separator"></i>
+    <span class="current">Cửa hàng</span>
+  </div>
+
+  <main class="container store-layout">
+    <!-- CỘT TRÁI: BỘ LỌC (SIDEBAR) -->
+    <aside class="store-sidebar">
+      <!-- Tìm kiếm -->
+      <div class="filter-group">
+        <h3 class="filter-title">Tìm kiếm thiết bị</h3>
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="filter-search" placeholder="Tìm theo tên thiết bị...">
+        </div>
+      </div>
+
+      <!-- Danh mục -->
+      <div class="filter-group">
+        <h3 class="filter-title"><i class="fa-solid fa-layer-group"></i> Danh mục <i class="fa-solid fa-chevron-up toggle-icon"></i></h3>
+        <div class="filter-list">
+          <label class="filter-item">
+            <input type="radio" name="category" value="all" checked>
+            <span>Tất cả sản phẩm</span>
+          </label>
+          <label class="filter-item">
+            <input type="radio" name="category" value="Audio">
+            <span>Tai nghe & Âm thanh</span>
+          </label>
+          <label class="filter-item">
+            <input type="radio" name="category" value="Wearables">
+            <span>Đồng hồ thông minh</span>
+          </label>
+          <label class="filter-item">
+            <input type="radio" name="category" value="Phone">
+            <span>Điện thoại Flagship</span>
+          </label>
+          <label class="filter-item">
+            <input type="radio" name="category" value="Accessories">
+            <span>Bàn phím cơ & Phụ kiện</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Khoảng giá -->
+      <div class="filter-group">
+        <h3 class="filter-title"><i class="fa-solid fa-money-bill-wave"></i> Khoảng giá <i class="fa-solid fa-chevron-up toggle-icon"></i></h3>
+        <div class="filter-list">
+          <label class="filter-item">
+            <input type="radio" name="price" value="all" checked>
+            <span>Tất cả mức giá</span>
+          </label>
+          <label class="filter-item">
+            <input type="radio" name="price" value="under-1m">
+            <span>Dưới 1.000.000đ</span>
+          </label>
+          <label class="filter-item">
+            <input type="radio" name="price" value="1m-5m">
+            <span>1.000.000đ - 5.000.000đ</span>
+          </label>
+          <label class="filter-item">
+            <input type="radio" name="price" value="over-5m">
+            <span>Trên 5.000.000đ</span>
+          </label>
+        </div>
+      </div>
+      
+      <!-- Nút xóa bộ lọc -->
+      <button id="btn-clear-filters" class="btn-clear"><i class="fa-solid fa-rotate-right"></i> Xóa tất cả bộ lọc</button>
+    </aside>
+
+    <!-- CỘT PHẢI: DANH SÁCH SẢN PHẨM -->
+    <section class="store-main">
+      <!-- Toolbar -->
+      <div class="store-toolbar">
+        <div class="active-filters">
+          <span class="toolbar-text">Đang áp dụng: <strong id="current-filter-label">Tất cả</strong></span>
+        </div>
+        <div class="toolbar-actions">
+          <label for="sort-select" class="toolbar-text">Sắp xếp theo:</label>
+          <select id="sort-select" class="sort-select">
+            <option value="default">Phù hợp nhất</option>
+            <option value="price-asc">Giá: Thấp đến Cao</option>
+            <option value="price-desc">Giá: Cao đến Thấp</option>
+            <option value="name-asc">Tên: A - Z</option>
+          </select>
+          <div class="view-toggles">
+            <button class="view-btn active"><i class="fa-solid fa-border-all"></i></button>
+            <button class="view-btn"><i class="fa-solid fa-list"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Container chứa sản phẩm -->
+      <div id="products-grid" class="product-grid store-grid">
+        <div class="loading-state">
+          <i class="fa-solid fa-spinner fa-spin fa-2x"></i>
+          <p>Đang tải danh sách sản phẩm...</p>
+        </div>
+      </div>
+
+      <!-- Phân trang -->
+      <div class="pagination-wrapper">
+        <span class="pagination-info" id="pagination-info">Trang 1 trên 1 • Tổng số 0 sản phẩm</span>
+        <div class="pagination-controls" id="pagination-controls">
+          <!-- Các nút phân trang render bằng JS -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div id="app-footer"></div>
+
+  <!-- Scripts -->
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/pages/products.js"></script>
+</body>
+</html>

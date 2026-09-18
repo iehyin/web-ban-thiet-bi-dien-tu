@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sản Phẩm Yêu Thích - Novix</title>
+  
+  <script src="https://kit.fontawesome.com/ed7e0a5ab3.js" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/wishlist.css">
+</head>
+<body class="bg-light">
+
+  <!-- Header -->
+  <div id="app-header"></div>
+
+  <!-- Breadcrumb & Toolbar -->
+  <div class="breadcrumb-toolbar container">
+    <div class="breadcrumb-left">
+      <a href="index.html"><i class="fa-solid fa-house"></i> Trang chủ</a>
+      <i class="fa-solid fa-chevron-right separator"></i>
+      <span class="current">Danh sách yêu thích (<span id="bc-wishlist-count">0</span> sản phẩm đã lưu)</span>
+    </div>
+    
+    <div class="breadcrumb-right">
+      <div class="status-filters">
+        <span class="status-btn active"><span class="dot green"></span> Đang có sản phẩm</span>
+        <span class="status-btn">Chưa có sản phẩm</span>
+      </div>
+      <div class="action-buttons">
+        <button id="btn-add-all-cart" class="btn-action primary"><i class="fa-solid fa-cart-plus"></i> Thêm tất cả vào giỏ</button>
+        <button id="btn-clear-wishlist" class="btn-action outline"><i class="fa-regular fa-trash-can"></i> Xóa tất cả</button>
+      </div>
+    </div>
+  </div>
+
+  <main class="container wishlist-layout">
+    <!-- Wishlist Header -->
+    <div class="wishlist-header">
+      <div class="wh-left">
+        <span class="sub-badge pink"><i class="fa-solid fa-heart"></i> BỘ SƯU TẬP CÁ NHÂN</span>
+        <h1 class="wh-title">Sản phẩm bạn yêu thích ❤️</h1>
+        <p class="wh-desc">Theo dõi biến động giá và thêm nhanh vào giỏ hàng bất cứ lúc nào với ưu đãi độc quyền.</p>
+      </div>
+      <div class="wh-right">
+        <label for="sort-wishlist">Sắp xếp theo:</label>
+        <select id="sort-wishlist" class="sort-select">
+          <option value="newest">Mới thêm gần đây</option>
+          <option value="price-asc">Giá: Thấp đến Cao</option>
+          <option value="price-desc">Giá: Cao đến Thấp</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Product Grid -->
+    <div id="wishlist-grid" class="product-grid store-grid">
+      <div class="loading-state" style="grid-column: 1/-1; text-align: center; padding: 60px;">
+        <i class="fa-solid fa-spinner fa-spin fa-2x"></i> Đang tải dữ liệu...
+      </div>
+    </div>
+
+    <!-- Features Bottom -->
+    <div class="wishlist-features">
+      <div class="wf-item">
+        <div class="wf-icon"><i class="fa-solid fa-arrow-trend-down"></i></div>
+        <div>
+          <strong>Cảnh báo giảm giá</strong>
+          <p>Nhận thông báo ngay khi món đồ yêu thích hạ giá</p>
+        </div>
+      </div>
+      <div class="wf-item">
+        <div class="wf-icon"><i class="fa-regular fa-bookmark"></i></div>
+        <div>
+          <strong>Bảo lưu 30 ngày</strong>
+          <p>Sản phẩm trong wishlist được lưu tự động trên tài khoản</p>
+        </div>
+      </div>
+      <div class="wf-item">
+        <div class="wf-icon"><i class="fa-solid fa-truck-fast"></i></div>
+        <div>
+          <strong>Giao nhanh tức thì</strong>
+          <p>Hỗ trợ giao siêu tốc 2H nội thành Hà Nội & TP.HCM</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <div id="app-footer"></div>
+
+  <!-- Scripts -->
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/pages/wishlist.js"></script>
+</body>
+</html>

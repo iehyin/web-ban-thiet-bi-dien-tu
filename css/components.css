@@ -68,7 +68,13 @@
   z-index: 2;
   transition: transform 0.2s ease;
 }
-
+/* NGĂN CHẶN CLICK VÀO ICON, ĐẨY SỰ KIỆN XUỐNG BUTTON */
+.btn-wishlist i,
+.btn-wishlist svg,
+.btn-add-cart i,
+.btn-add-cart svg {
+  pointer-events: none !important;
+}
 .btn-wishlist:hover {
   transform: scale(1.1);
 }
@@ -266,6 +272,7 @@
   color: var(--accent-orange);
   margin-top: 4px;
 }
+
 
 /* Search Bar */
 .search-wrapper {

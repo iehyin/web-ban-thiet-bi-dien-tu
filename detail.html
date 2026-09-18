@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi Tiết Sản Phẩm - Novix</title>
+  
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/ed7e0a5ab3.js" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/detail.css">
+</head>
+<body class="bg-light">
+
+  <!-- Nơi xuất Header -->
+  <div id="app-header"></div>
+
+  <!-- Breadcrumb Component -->
+  <div class="breadcrumb-wrapper container">
+    <a href="index.html"><i class="fa-solid fa-house"></i> Trang chủ</a>
+    <i class="fa-solid fa-chevron-right separator"></i>
+    <span id="bc-category">Danh mục</span>
+    <i class="fa-solid fa-chevron-right separator"></i>
+    <span id="bc-name" class="current">Tên sản phẩm</span>
+  </div>
+
+  <main class="container">
+    <!-- Nơi render nội dung chi tiết sản phẩm bằng JS -->
+    <div id="product-detail-container" class="detail-container">
+      <div style="padding: 100px; text-align: center;">
+        <i class="fa-solid fa-spinner fa-spin fa-2x"></i> Đang tải dữ liệu sản phẩm...
+      </div>
+    </div>
+
+    <!-- Section: Sản Phẩm Tương Tự -->
+    <section class="related-products-section">
+      <div class="section-header">
+        <div>
+          <span class="sub-badge orange">GỢI Ý TƯƠNG TỰ</span>
+          <h2 class="section-title">Sản phẩm cùng hệ sinh thái công nghệ</h2>
+        </div>
+        <a href="products.html" class="view-all-link">Xem tất cả <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <!-- Khu vực hiển thị 3 Card sản phẩm gợi ý -->
+      <div id="related-products" class="product-grid related-grid"></div>
+    </section>
+  </main>
+
+  <!-- Nơi xuất Footer -->
+  <div id="app-footer"></div>
+
+  <!-- Scripts -->
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/pages/detail.js"></script>
+</body>
+</html>

@@ -1,23 +1,37 @@
-import { Header } from './components/Header.js';
+import { Header, bindHeaderEvents } from './components/Header.js';
 import { Footer } from './components/Footer.js';
+import { bindProductCardEvents } from './components/ProductCard.js'; // <-- Import hàm bắt sự kiện
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Render Header và lấy dữ liệu thật từ LocalStorage
   const appHeader = document.getElementById('app-header');
+  
   if (appHeader) {
     const user = JSON.parse(localStorage.getItem('currentUser'));
-    const cart = JSON.parse(localStorage.getItem('cart')) || [];
-    const wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+    let cartCount = 0;
+    let wishlistCount = 0;
+
+    // Chỉ đếm số lượng giỏ hàng/yêu thích nếu user ĐÃ ĐĂNG NHẬP
+    if (user) {
+      const userId = user.email;
+      const cart = JSON.parse(localStorage.getItem(`cart_${userId}`)) || [];
+      const wishlist = JSON.parse(localStorage.getItem(`wishlist_${userId}`)) || [];
+      
+      cartCount = cart.reduce((total, item) => total + item.quantity, 0);
+      wishlistCount = wishlist.length;
+    }
     
-    // Tính tổng số lượng sản phẩm trong giỏ
-    const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
-    
-    appHeader.innerHTML = Header(user, cartCount, wishlist.length);
+    // Render HTML Header
+    appHeader.innerHTML = Header(user, cartCount, wishlistCount);
+
+    // Kích hoạt nút Đăng xuất trên Header
+    bindHeaderEvents();
   }
 
-  // 2. Render Footer
   const appFooter = document.getElementById('app-footer');
   if (appFooter) {
     appFooter.innerHTML = Footer();
   }
+
+  // KHỞI ĐỘNG LẮNG NGHE SỰ KIỆN CHO TẤT CẢ PRODUCT CARD (Giỏ hàng, Yêu thích)
+  bindProductCardEvents();
 });
